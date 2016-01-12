@@ -13,23 +13,22 @@ if ( ! defined( 'WPINC' ) ) {
     die;
 }
 
+define( 'BPBlockUser_DIR', dirname( __FILE__ ) );
+
+//include main plugin file
+require_once BPBlockUser_DIR .'/includes/class-BPBlockUser.php';
+
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-BPBlockUser-activator.php
  */
 function activate_bp_block_user() {
-    $plugin_dir = plugin_dir_path( __FILE__ );
-
-    require_once $plugin_dir . 'includes/class-BPBlockUser-activator.php';
+    require_once BPBlockUser_DIR . '/includes/class-BPBlockUser-activator.php';
     BP_Block_User_Activator::activate();
 }
 
 register_activation_hook( __FILE__, 'activate_bp_block_user' );
 
-/**
- * The code that runs during plugin deactivation.
-function deactivate_wp_habit_builder() {
-    require_once plugin_dir_path( __FILE__ ) . 'includes/class-WPHabbitBuilder-deactivator.php';
-    WP_Habbit_Builder_Deactivator::deactivate();
-}
- */
+
+//start plugin
+$plugin = new BP_Block_User();
