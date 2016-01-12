@@ -1,1 +1,2 @@
-# buddypress-block-user
+# BuddyPress Block User
+Allows user blocks another users
