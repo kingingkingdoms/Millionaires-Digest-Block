@@ -8,27 +8,21 @@ Author URI: https://millionairedigest.com/
 
 */
 
-// If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) {
-    die;
+//If this file is called directly, abort.
+if( ! defined( 'WPINC' ) ) {
+	die;
 }
-
 define( 'BPBlockUser_DIR', dirname( __FILE__ ) );
 
-//include main plugin file
+//Include main plugin file
 require_once BPBlockUser_DIR .'/includes/class-BPBlockUser.php';
 
-/**
- * The code that runs during plugin activation.
- * This action is documented in includes/class-BPBlockUser-activator.php
- */
+/* The code that runs during plugin activation. This action is documented in includes/class-BPBlockUser-activator.php */
 function activate_bp_block_user() {
     require_once BPBlockUser_DIR . '/includes/class-BPBlockUser-activator.php';
     BP_Block_User_Activator::activate();
 }
-
 register_activation_hook( __FILE__, 'activate_bp_block_user' );
 
-
-//start plugin
+//Start plugin
 $plugin = new BP_Block_User();
