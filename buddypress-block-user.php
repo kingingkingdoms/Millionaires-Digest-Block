@@ -1,11 +1,11 @@
 <?php
 /*
-    Plugin Name: BuddyPress Block User
-    Plugin URI: https://www.upwork.com/freelancers/~0170bd24e40bc723c6
-    Description: Allows users to block another users.
-    Author: Andrij Tkachenko
-    Version: 0.1
-    Author URI: https://www.upwork.com/freelancers/~0170bd24e40bc723c6
+Plugin Name: Millionaire's Digest Block  
+Description: Allow users to block and unblock users and accounts with thanks going to andreuka for the original plugin.
+Version: 1.0.0
+Author: K&L (Founder of the Millionaire's Digest)
+Author URI: https://millionairedigest.com/
+
 */
 
 // If this file is called directly, abort.
