@@ -9,7 +9,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Allow users to block and unblock users and accounts with thanks going to andreuka for the original plugin.
+Allow users to block and unblock users and accounts with special thanks and all credits going to andreuka for the original plugin.
 
 == Installation ==
 
