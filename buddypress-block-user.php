@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Millionaire's Digest Block  
-Description: Allow users to block and unblock users and accounts with thanks going to andreuka for the original plugin.
+Description: Allow users to block and unblock users and accounts.
 Version: 1.0.0
 Author: K&L (Founder of the Millionaire's Digest)
 Author URI: https://millionairedigest.com/
